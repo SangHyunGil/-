@@ -1,0 +1,11 @@
+public class SequenceCondition {
+    private int sequence;
+
+    public SequenceCondition(int sequence) {
+        this.sequence = sequence;
+    }
+
+    private boolean isSatisfiedBy(Screening screening) {
+        return sequence == screening.getSequence();
+    }
+}
