@@ -1,11 +1,11 @@
-public class SequenceCondition {
+public class SequenceCondition implements DiscountCondition{
     private int sequence;
 
     public SequenceCondition(int sequence) {
         this.sequence = sequence;
     }
 
-    private boolean isSatisfiedBy(Screening screening) {
+    public boolean isSatisfiedBy(Screening screening) {
         return sequence == screening.getSequence();
     }
 }
