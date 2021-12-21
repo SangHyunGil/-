@@ -32,6 +32,8 @@ public class Movie {
             case NONE_DISCOUNT:
                 return calculateNoneDiscountAmount();
         }
+
+        throw new IllegalArgumentException();
     }
 
     private Money calculateAmountDiscountAmount() {
